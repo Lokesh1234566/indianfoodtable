@@ -1,0 +1,445 @@
+{
+  "sampledata": [
+    {
+      "Food_Code": "A001",
+      "Food_Name": "Amaranth seed, black (Amaranlhus cruenlus)",
+      "No_of_Regions": "",
+      "Total": "1.70",
+      "Oxalate_Soluble": "1.32",
+      "Oxalate_Insoluble": "0.38",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A002",
+      "Food_Name": "Amaranth seed, pale brown (Amaranlhus cruenlus)",
+      "No_of_Regions": "6",
+      "Total": "34.00",
+      "Oxalate_Soluble": "31.26",
+      "Oxalate_Insoluble": "2.75",
+      "Cis_Aconitic_Acid": "1.63"
+    },
+    {
+      "Food_Code": "A003",
+      "Food_Name": "Bajra (Penni selum lyphoideum)",
+      "No_of_Regions": "6",
+      "Total": "35.87",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "2.42",
+      "Cis_Aconitic_Acid": "0.23"
+    },
+    {
+      "Food_Code": "A004",
+      "Food_Name": "Barley (Hordeum vulgare)",
+      "No_of_Regions": "6",
+      "Total": "32.40",
+      "Oxalate_Soluble": "30.44",
+      "Oxalate_Insoluble": "1.96",
+      "Cis_Aconitic_Acid": "1.53"
+    },
+    {
+      "Food_Code": "A005",
+      "Food_Name": "Jowar (Sorghum vulgare)",
+      "No_of_Regions": "6",
+      "Total": "33.41",
+      "Oxalate_Soluble": "0.12",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": "64.80"
+    },
+    {
+      "Food_Code": "A006",
+      "Food_Name": "Maize, dry (Zeamays)",
+      "No_of_Regions": "6",
+      "Total": "8.21",
+      "Oxalate_Soluble": "81.83",
+      "Oxalate_Insoluble": "22.88",
+      "Cis_Aconitic_Acid": "14.71"
+    },
+    {
+      "Food_Code": "A007",
+      "Food_Name": "Maize, tender, local (Zeamays)",
+      "No_of_Regions": "6",
+      "Total": "7.31",
+      "Oxalate_Soluble": "47.27",
+      "Oxalate_Insoluble": "26.76",
+      "Cis_Aconitic_Acid": "17.75"
+    },
+    {
+      "Food_Code": "A008",
+      "Food_Name": "Maize, tender, sweet (Zeamays)",
+      "No_of_Regions": "4",
+      "Total": "10.49",
+      "Oxalate_Soluble": "48.35",
+      "Oxalate_Insoluble": "36.97",
+      "Cis_Aconitic_Acid": "17.94"
+    },
+    {
+      "Food_Code": "A009",
+      "Food_Name": "Quinoa (Chenopodium quinoa)",
+      "No_of_Regions": "",
+      "Total": "2.78",
+      "Oxalate_Soluble": "2.02",
+      "Oxalate_Insoluble": "0.76",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A010",
+      "Food_Name": "Ragi (Eleus ine coracana)",
+      "No_of_Regions": "5",
+      "Total": "3.87",
+      "Oxalate_Soluble": "3.11",
+      "Oxalate_Insoluble": "0.76",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A011",
+      "Food_Name": "Rice flakes (Oryza saliva)",
+      "No_of_Regions": "6",
+      "Total": "2.80",
+      "Oxalate_Soluble": "1.33",
+      "Oxalate_Insoluble": "1.47",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A012",
+      "Food_Name": "Rice puffed (Oryza saliva)",
+      "No_of_Regions": "6",
+      "Total": "2.38",
+      "Oxalate_Soluble": "2.05",
+      "Oxalate_Insoluble": "0.34",
+      "Cis_Aconitic_Acid": "0.77"
+    },
+    {
+      "Food_Code": "A013",
+      "Food_Name": "Rice, raw, brown (Oryza saliva)",
+      "No_of_Regions": "6",
+      "Total": "4.15",
+      "Oxalate_Soluble": "3.97",
+      "Oxalate_Insoluble": "0.18",
+      "Cis_Aconitic_Acid": "1.69"
+    },
+    {
+      "Food_Code": "A014",
+      "Food_Name": "Rice, parboiled, milled (Oryzasaliva)",
+      "No_of_Regions": "6",
+      "Total": "0.12",
+      "Oxalate_Soluble": "111",
+      "Oxalate_Insoluble": "1.02",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A015",
+      "Food_Name": "Rice, raw, milled (Oryza saliva)",
+      "No_of_Regions": "6",
+      "Total": "0.21",
+      "Oxalate_Soluble": "1.32",
+      "Oxalate_Insoluble": "0.33",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A016",
+      "Food_Name": "Samai (Panicum milaire)",
+      "No_of_Regions": "6",
+      "Total": "290",
+      "Oxalate_Soluble": "0.67",
+      "Oxalate_Insoluble": "2.32",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A017",
+      "Food_Name": "Varagu (Paspaum s crobicu alum)",
+      "No_of_Regions": "5",
+      "Total": "285",
+      "Oxalate_Soluble": "0.90",
+      "Oxalate_Insoluble": "2.87",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A018",
+      "Food_Name": "Wheat flour, refined (Triticum aestivum)",
+      "No_of_Regions": "6",
+      "Total": "296",
+      "Oxalate_Soluble": "1.92",
+      "Oxalate_Insoluble": "4.15",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A019",
+      "Food_Name": "Wheat flour, atta (Triticum aestivum)",
+      "No_of_Regions": "6",
+      "Total": "111",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A020",
+      "Food_Name": "Wheat, whole (Triticum aestivum)",
+      "No_of_Regions": "6",
+      "Total": "",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A021",
+      "Food_Name": "Wheat, bulgur (Triticum aestivum)",
+      "No_of_Regions": "6",
+      "Total": "",
+      "Oxalate_Soluble": "5.12",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A022",
+      "Food_Name": "Wheat, semolina (Triticum aestivum)",
+      "No_of_Regions": "6",
+      "Total": "",
+      "Oxalate_Soluble": "4.05",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A023",
+      "Food_Name": "Wheat, vermicelli (Triticum aestivum)",
+      "No_of_Regions": "6",
+      "Total": "",
+      "Oxalate_Soluble": "4.15",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "A024",
+      "Food_Name": "Wheat, vermicelli, roasted (Triticum aestivum)",
+      "No_of_Regions": "6",
+      "Total": "8.46",
+      "Oxalate_Soluble": "6.90",
+      "Oxalate_Insoluble": "1.56",
+      "Cis_Aconitic_Acid": "0.49"
+    },
+    {
+      "Food_Code": "B001",
+      "Food_Name": "Bengal gram, dal (Cicer arietinum)",
+      "No_of_Regions": "6",
+      "Total": "9.71",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "1.92",
+      "Cis_Aconitic_Acid": "0.44"
+    },
+    {
+      "Food_Code": "B002",
+      "Food_Name": "Bengal gram, whole (Cicer arietinum)",
+      "No_of_Regions": "6",
+      "Total": "11.50",
+      "Oxalate_Soluble": "7.23",
+      "Oxalate_Insoluble": "4.28",
+      "Cis_Aconitic_Acid": "0.45"
+    },
+    {
+      "Food_Code": "B003",
+      "Food_Name": "Black gram, dal (Phaseolus mungo)",
+      "No_of_Regions": "6",
+      "Total": "8.44",
+      "Oxalate_Soluble": "5.32",
+      "Oxalate_Insoluble": "3.07",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B004",
+      "Food_Name": "Black gram, whole (Phaseolus mungo)",
+      "No_of_Regions": "6",
+      "Total": "4.32",
+      "Oxalate_Soluble": "0.98",
+      "Oxalate_Insoluble": "3.35",
+      "Cis_Aconitic_Acid": "10.52"
+    },
+    {
+      "Food_Code": "B005",
+      "Food_Name": "Cowpea, brown (Vigna catjang)",
+      "No_of_Regions": "6",
+      "Total": "430",
+      "Oxalate_Soluble": "0.58",
+      "Oxalate_Insoluble": "75.86",
+      "Cis_Aconitic_Acid": "3.56"
+    },
+    {
+      "Food_Code": "B006",
+      "Food_Name": "Cowpea, white (Vigna catjang)",
+      "No_of_Regions": "",
+      "Total": "445",
+      "Oxalate_Soluble": "0.45",
+      "Oxalate_Insoluble": "74.50",
+      "Cis_Aconitic_Acid": "3.51"
+    },
+    {
+      "Food_Code": "B007",
+      "Food_Name": "Field bean, black (Phaseolus vulgaris)",
+      "No_of_Regions": "",
+      "Total": "442",
+      "Oxalate_Soluble": "0.81",
+      "Oxalate_Insoluble": "75.48",
+      "Cis_Aconitic_Acid": "2.68"
+    },
+    {
+      "Food_Code": "B008",
+      "Food_Name": "Field bean, brown (Phaseolus vulgaris)",
+      "No_of_Regions": "",
+      "Total": "127",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "22.07",
+      "Cis_Aconitic_Acid": "1.07"
+    },
+    {
+      "Food_Code": "B009",
+      "Food_Name": "Field bean, white (Phaseolus vulgaris)",
+      "No_of_Regions": "5",
+      "Total": "10.52",
+      "Oxalate_Soluble": "0.34",
+      "Oxalate_Insoluble": "135",
+      "Cis_Aconitic_Acid": "79.06"
+    },
+    {
+      "Food_Code": "B010",
+      "Food_Name": "Green gram, dal (Vigna radiata)",
+      "No_of_Regions": "6",
+      "Total": "3.56",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "10.52",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B011",
+      "Food_Name": "Green gram, whole (Vigna radiata)",
+      "No_of_Regions": "6",
+      "Total": "3.51",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "3.56",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B012",
+      "Food_Name": "Horse gram, whole (Dolichos biflorus)",
+      "No_of_Regions": "6",
+      "Total": "2.68",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "3.51",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B013",
+      "Food_Name": "Lentil dal (Lens culinaris)",
+      "No_of_Regions": "6",
+      "Total": "1.07",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "2.68",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B014",
+      "Food_Name": "Lentil whole, brown (Lens culinaris)",
+      "No_of_Regions": "6",
+      "Total": "79.06",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "1.07",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B015",
+      "Food_Name": "Lentil whole, yellowish (Lens culinaris)",
+      "No_of_Regions": "2",
+      "Total": "2.46",
+      "Oxalate_Soluble": "7.77",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B016",
+      "Food_Name": "Moth bean (Vigna aconitifolia)",
+      "No_of_Regions": "6",
+      "Total": "",
+      "Oxalate_Soluble": "9.01",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B017",
+      "Food_Name": "Peas, dry (Pisum sativum)",
+      "No_of_Regions": "6",
+      "Total": "4.12",
+      "Oxalate_Soluble": "11.72",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B018",
+      "Food_Name": "Rajmah, black (Phaseolus vulgaris)",
+      "No_of_Regions": "2",
+      "Total": "6.34",
+      "Oxalate_Soluble": "14.31",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B019",
+      "Food_Name": "Rajmah, brown (Phaseolus vulgaris)",
+      "No_of_Regions": "6",
+      "Total": "0.81",
+      "Oxalate_Soluble": "3.50",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B020",
+      "Food_Name": "Rajmah, red (Phaseolus vulgaris)",
+      "No_of_Regions": "3",
+      "Total": "0.97",
+      "Oxalate_Soluble": "3.96",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B021",
+      "Food_Name": "Red gram, dal (Cajanus cajan)",
+      "No_of_Regions": "6",
+      "Total": "0.76",
+      "Oxalate_Soluble": "3.25",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B022",
+      "Food_Name": "Red gram, whole (Cajanus cajan)",
+      "No_of_Regions": "6",
+      "Total": "0.86",
+      "Oxalate_Soluble": "3.04",
+      "Oxalate_Insoluble": "",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B023",
+      "Food_Name": "Ricebean (Vigna umbellata)",
+      "No_of_Regions": "",
+      "Total": "",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "5.61",
+      "Cis_Aconitic_Acid": ""
+    },
+    {
+      "Food_Code": "B024",
+      "Food_Name": "Soybean, brown (Glycine max)",
+      "No_of_Regions": "6",
+      "Total": "",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "6.48",
+      "Cis_Aconitic_Acid": "6.97"
+    },
+    {
+      "Food_Code": "B025",
+      "Food_Name": "Soybean, white (Glycine max)",
+      "No_of_Regions": "",
+      "Total": "",
+      "Oxalate_Soluble": "",
+      "Oxalate_Insoluble": "6.25",
+      "Cis_Aconitic_Acid": ""
+    }
+  ]
+}
