@@ -15,6 +15,7 @@ const App = () => {
   const [clickedWaterSoluble, setClickedWaterSoluble] = useState(null);
   const [clickedOrganicAcid, setClickedOrganicAcid] = useState(null);
   const [clickedCarotenoids, setClickedCarotenoids] = useState(null);
+  const [clickedStarch, setClickedStarch] = useState(null);
   const [activeTable, setActiveTable] = useState("watersoluble");
 
   return (
@@ -44,12 +45,16 @@ const App = () => {
             <Carotenoids setClickedCarotenoids={setClickedCarotenoids} />
           }
         />
-        <Route path="/starch" element={<Starch />} />
+        <Route
+          path="/starch"
+          element={<Starch setClickedStarch={setClickedStarch} />}
+        />
       </Routes>
       <FooterComp
         clickedWaterSoluble={clickedWaterSoluble}
         clickedOrganicAcid={clickedOrganicAcid}
         clickedCarotenoids={clickedCarotenoids}
+        clickedStarch={clickedStarch}
         activeTable={activeTable}
       />
     </BrowserRouter>

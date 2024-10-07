@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import { Table } from "flowbite-react";
-import sampledata from "../assets/sampledata.json";
+import carotenoids from "../assets/carotenoids.json";
 
 const Carotenoids = ({ setClickedCarotenoids }) => {
   const [sortField, setSortField] = useState(null); // Track the field to sort by
@@ -14,7 +14,7 @@ const Carotenoids = ({ setClickedCarotenoids }) => {
     setSortOrder(order);
   };
 
-  const sortedData = [...sampledata.sampledata].sort((a, b) => {
+  const sortedData = [...carotenoids.carotenoids_details].sort((a, b) => {
     if (!sortField) return 0; // If no sort field is selected, return original order
     const valA = parseFloat(a[sortField]) || 0; // Convert the value to float if it's numeric
     const valB = parseFloat(b[sortField]) || 0; // Convert the value to float if it's numeric
@@ -31,50 +31,74 @@ const Carotenoids = ({ setClickedCarotenoids }) => {
       <div className="min-w-full border border-gray-200 sm:rounded-lg">
         <Table className="table-auto w-full text-sm text-left text-gray-500 border-collapse">
           <Table.Head className="bg-gray-50 border border-slate-500 text-xs sm:text-sm sticky top-0 z-30">
-            <Table.HeadCell className="border border-slate-400 sticky left-0 top-0 bg-teal-400 text-white z-10">
+            <Table.HeadCell className="border border-slate-400 sticky left-0 top-0 bg-teal-400 text-black z-10">
               SI No
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 sticky left-0 top-0 bg-teal-400 text-white z-10 cursor-pointer"
+              className="border border-slate-400 sticky left-0 top-0 bg-teal-400 text-black z-10 cursor-pointer"
               // onClick={() => handleSort("Food_Code")}
             >
               Food Code
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-teal-400 text-white cursor-pointer"
+              className="border border-slate-400 bg-teal-400 text-black cursor-pointer"
               // onClick={() => handleSort("Food_Name")}
             >
               Food Name
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-teal-400 text-white cursor-pointer"
+              className="border border-slate-400 bg-teal-400 text-black cursor-pointer"
               // onClick={() => handleSort("No_of_Regions")}
             >
               No of Regions
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-teal-400 text-white cursor-pointer"
-              onClick={() => handleSort("Total")}
+              className="border border-slate-400 bg-teal-400 text-black cursor-pointer"
+              onClick={() => handleSort("Lutein")}
             >
-              Total
+              Lutein
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-teal-400 text-white cursor-pointer"
-              onClick={() => handleSort("Oxalate_Soluble")}
+              className="border border-slate-400 bg-teal-400 text-black cursor-pointer"
+              onClick={() => handleSort("Zeaxanthin")}
             >
-              Oxalate Soluble
+              Zeaxanthin
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-teal-400 text-white cursor-pointer"
-              onClick={() => handleSort("Oxalate_Insoluble")}
+              className="border border-slate-400 bg-teal-400 text-black cursor-pointer"
+              onClick={() => handleSort("Lycopene")}
             >
-              Oxalate Insoluble
+              Lycopene
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-teal-400 text-white cursor-pointer"
-              onClick={() => handleSort("Cis_Aconitic_Acid")}
+              className="border border-slate-400 bg-teal-400 text-black cursor-pointer"
+              onClick={() => handleSort("Cryptoxanthin")}
             >
-              Cis Aconitic Acid
+              Cryptoxanthin
+            </Table.HeadCell>
+            <Table.HeadCell
+              className="border border-slate-400 bg-teal-400 text-black cursor-pointer"
+              onClick={() => handleSort("y_Carotene")}
+            >
+              y_Carotene
+            </Table.HeadCell>
+            <Table.HeadCell
+              className="border border-slate-400 bg-teal-400 text-black cursor-pointer"
+              onClick={() => handleSort("a_Carotene")}
+            >
+              a_Carotene
+            </Table.HeadCell>
+            <Table.HeadCell
+              className="border border-slate-400 bg-teal-400 text-black cursor-pointer"
+              onClick={() => handleSort("B_Carotene")}
+            >
+              B_Carotene
+            </Table.HeadCell>
+            <Table.HeadCell
+              className="border border-slate-400 bg-teal-400 text-black cursor-pointer"
+              onClick={() => handleSort("Total_Carotenoids")}
+            >
+              Total_Carotenoids
             </Table.HeadCell>
           </Table.Head>
           <Table.Body className="h-full">
@@ -96,16 +120,28 @@ const Carotenoids = ({ setClickedCarotenoids }) => {
                   {carot.No_of_Regions}
                 </Table.Cell>
                 <Table.Cell className="border border-slate-400">
-                  {carot.Total}
+                  {carot.Lutein}
                 </Table.Cell>
                 <Table.Cell className="border border-slate-400">
-                  {carot.Oxalate_Soluble}
+                  {carot.Zeaxanthin}
                 </Table.Cell>
                 <Table.Cell className="border border-slate-400">
-                  {carot.Oxalate_Insoluble}
+                  {carot.Lycopene}
                 </Table.Cell>
                 <Table.Cell className="border border-slate-400">
-                  {carot.Cis_Aconitic_Acid}
+                  {carot.Cryptoxanthin}
+                </Table.Cell>
+                <Table.Cell className="border border-slate-400">
+                  {carot.y_Carotene}
+                </Table.Cell>
+                <Table.Cell className="border border-slate-400">
+                  {carot.a_Carotene}
+                </Table.Cell>
+                <Table.Cell className="border border-slate-400">
+                  {carot.B_Carotene}
+                </Table.Cell>
+                <Table.Cell className="border border-slate-400">
+                  {carot.Total_Carotenoids}
                 </Table.Cell>
               </Table.Row>
             ))}

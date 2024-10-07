@@ -5,6 +5,7 @@ const FooterComp = ({
   clickedWaterSoluble,
   clickedOrganicAcid,
   clickedCarotenoids,
+  clickedStarch,
   activeTable,
 }) => {
   const renderDetails = (entity, entityType) => {
@@ -31,6 +32,8 @@ const FooterComp = ({
           renderDetails(clickedOrganicAcid, "oa")
         ) : clickedCarotenoids ? (
           renderDetails(clickedCarotenoids, "carot")
+        ) : clickedStarch ? (
+          renderDetails(clickedStarch, "sv")
         ) : (
           <p>No entity selected yet</p>
         )}

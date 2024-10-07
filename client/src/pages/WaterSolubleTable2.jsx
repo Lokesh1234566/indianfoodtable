@@ -4,25 +4,27 @@ import { Table } from "flowbite-react";
 import wsvtable2 from "../assets/wsvtable.json";
 
 const WaterSoluble = ({ setClickedWaterSoluble }) => {
-  const [sortedData, setSortedData] = useState(wsvtable2.wsv_details); // Store sorted data
-  const [sortConfig, setSortConfig] = useState({ key: null, ascending: true }); // Track sorting state
+  const [sortField, setSortField] = useState(null); // Track the field to sort by
+  const [sortOrder, setSortOrder] = useState("desc"); // Track sorting order (asc or desc)
 
-  // Function to sort the data based on field
+  // Function to sort the data
   const handleSort = (field) => {
-    const ascending = sortConfig.key === field ? !sortConfig.ascending : true; // Toggle sort order if the same field is clicked
-    const sortedArray = [...sortedData].sort((a, b) => {
-      if (a[field] < b[field]) {
-        return ascending ? -1 : 1;
-      }
-      if (a[field] > b[field]) {
-        return ascending ? 1 : -1;
-      }
-      return 0;
-    });
-
-    setSortedData(sortedArray); // Update state with sorted data
-    setSortConfig({ key: field, ascending }); // Update sorting config
+    const order = sortField === field && sortOrder === "desc" ? "asc" : "desc"; // Toggle between asc and desc
+    setSortField(field);
+    setSortOrder(order);
   };
+
+  const sortedData = [...wsvtable2.wsv_details].sort((a, b) => {
+    if (!sortField) return 0; // If no sort field is selected, return original order
+    const valA = parseFloat(a[sortField]) || 0; // Convert the value to float if it's numeric
+    const valB = parseFloat(b[sortField]) || 0; // Convert the value to float if it's numeric
+
+    if (sortOrder === "asc") {
+      return valA - valB; // Ascending order for numbers
+    } else {
+      return valB - valA; // Descending order for numbers
+    }
+  });
 
   return (
     <div className="overflow-x-auto h-[50vh] ">
@@ -30,131 +32,73 @@ const WaterSoluble = ({ setClickedWaterSoluble }) => {
         <Table className="table-auto w-full text-sm text-left text-gray-500 border-collapse">
           <Table.Head className="bg-gray-50 border border-slate-500 text-xs sm:text-sm sticky top-0 z-30">
             <Table.HeadCell
-              className="border border-slate-400 sticky left-0 top-0 bg-blue-400 text-white z-10"
+              className="border border-slate-400 sticky left-0 top-0 bg-blue-400 text-black z-10"
               // onClick={() => handleHeadCellClick("SI No")}
             >
               SI No
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 sticky left-0 top-0 bg-blue-400 text-white z-10 cursor-pointer"
+              className="border border-slate-400 sticky left-0 top-0 bg-blue-400 text-black z-10 cursor-pointer"
               // onClick={() => handleSort("Food_Code")}
             >
               Food Code{" "}
-              {/* {sortConfig.key === "Food_Code"
-                ? sortConfig.ascending
-                  ? "↑"
-                  : "↓"
-                : ""} */}
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-blue-400 text-white cursor-pointer"
+              className="border border-slate-400 bg-blue-400 text-black cursor-pointer"
               // onClick={() => handleSort("Food_Name")}
             >
               Food Name{" "}
-              {/* {sortConfig.key === "Food_Name"
-                ? sortConfig.ascending
-                  ? "↑"
-                  : "↓"
-                : ""} */}
             </Table.HeadCell>
-            <Table.HeadCell
-              className="border border-slate-400 bg-blue-400 text-white cursor-pointer"
-              // onClick={() => handleSort("No_of_Regions")}
-            >
+            <Table.HeadCell className="border border-slate-400 bg-blue-400 text-black cursor-pointer">
               No of Regions{" "}
-              {/* {sortConfig.key === "No_of_Regions"
-                ? sortConfig.ascending
-                  ? "↑"
-                  : "↓"
-                : ""} */}
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-blue-400 text-white cursor-pointer"
+              className="border border-slate-400 bg-blue-400 text-black cursor-pointer"
               onClick={() => handleSort("Thiamine_B1")} // Sort by Thiamine (B1)
             >
-              Thiamine(B1){" "}
-              {sortConfig.key === "Thiamine_B1"
-                ? sortConfig.ascending
-                  ? "↑"
-                  : "↓"
-                : ""}
+              Thiamine_B1
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-blue-400 text-white cursor-pointer"
+              className="border border-slate-400 bg-blue-400 text-black cursor-pointer"
               onClick={() => handleSort("Riboflavin_B2")} // Sort by Riboflavin (B2)
             >
-              Riboflavin(B2){" "}
-              {sortConfig.key === "Riboflavin_B2"
-                ? sortConfig.ascending
-                  ? "↑"
-                  : "↓"
-                : ""}
+              Riboflavin_B2
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-blue-400 text-white cursor-pointer"
+              className="border border-slate-400 bg-blue-400 text-black cursor-pointer"
               onClick={() => handleSort("Niacin_B3")} // Sort by Niacin (B3)
             >
               Niacin(B3){" "}
-              {sortConfig.key === "Niacin_B3"
-                ? sortConfig.ascending
-                  ? "↑"
-                  : "↓"
-                : ""}
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-blue-400 text-white cursor-pointer"
+              className="border border-slate-400 bg-blue-400 text-black cursor-pointer"
               onClick={() => handleSort("Pantothenic_Acid_B5")} // Sort by Pantothenic Acid (B5)
             >
               Pantothenic Acid (B5){" "}
-              {sortConfig.key === "Pantothenic_Acid_B5"
-                ? sortConfig.ascending
-                  ? "↑"
-                  : "↓"
-                : ""}
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-blue-400 text-white cursor-pointer"
+              className="border border-slate-400 bg-blue-400 text-black cursor-pointer"
               onClick={() => handleSort("Total_B6")} // Sort by Total (B6)
             >
               Total (B6){" "}
-              {sortConfig.key === "Total_B6"
-                ? sortConfig.ascending
-                  ? "↑"
-                  : "↓"
-                : ""}
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-blue-400 text-white cursor-pointer"
+              className="border border-slate-400 bg-blue-400 text-black cursor-pointer"
               onClick={() => handleSort("Biotin_B7")} // Sort by Biotin (B7)
             >
               Biotin(B7){" "}
-              {sortConfig.key === "Biotin_B7"
-                ? sortConfig.ascending
-                  ? "↑"
-                  : "↓"
-                : ""}
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-blue-400 text-white cursor-pointer"
+              className="border border-slate-400 bg-blue-400 text-black cursor-pointer"
               onClick={() => handleSort("Total_Folates_B9")} // Sort by Total Folates (B9)
             >
               Total Folates(B9){" "}
-              {sortConfig.key === "Total_Folates_B9"
-                ? sortConfig.ascending
-                  ? "↑"
-                  : "↓"
-                : ""}
             </Table.HeadCell>
             <Table.HeadCell
-              className="border border-slate-400 bg-blue-400 text-white cursor-pointer"
+              className="border border-slate-400 bg-blue-400 text-black cursor-pointer"
               onClick={() => handleSort("Total_Ascorbic_acid")} // Sort by Total Ascorbic Acid
             >
               Total Ascorbic acid{" "}
-              {sortConfig.key === "Total_Ascorbic_acid"
-                ? sortConfig.ascending
-                  ? "↑"
-                  : "↓"
-                : ""}
             </Table.HeadCell>
           </Table.Head>
           <Table.Body className="h-full">
